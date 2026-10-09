@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply for Transport Pass</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>College Transport Management System</h1>
+    <p>Transport Pass Application</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Apply for a Transport Pass</h2>
+
+        <form action="ApplyPassServlet" method="post">
+
+            <label>Boarding Point:</label>
+            <select name="point_id" required>
+                <option value="">Select Boarding Point</option>
+                <option value="1">Main Bus Stop</option>
+                <option value="2">City Centre</option>
+            </select>
+
+            <label>Start Date:</label>
+            <input type="date" name="start_date" required>
+
+            <label>End Date:</label>
+            <input type="date" name="end_date" required>
+
+            <button type="submit" class="btn">
+                Submit Application
+            </button>
+        </form>
+
+        <br>
+        <a class="btn secondary" href="student-dashboard.jsp">
+            Back to Dashboard
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
+
